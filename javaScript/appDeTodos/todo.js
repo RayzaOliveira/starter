@@ -50,6 +50,9 @@ function renderTodos() {
 
   }
 }
+
+// não tem return , pq não vai retornar algo (nesse caso a função é um void)
+// execução da fução
 renderTodos();
 
 // função para adicionar ToDo **
@@ -100,4 +103,5 @@ function saveTodoStorage(){
 // JSON(parece um objeto, porem ele é uma String), usado para converter um array em json
 // JSON.stringify, transforma o vetor/objetos em uma string
 // JSON.parse, transformando o json em array
+// document. , referenciando a pagina (html/DOM)
 
