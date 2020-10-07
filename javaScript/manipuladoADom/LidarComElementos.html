@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body style="background-color: slategray">
+
+      <!-- Criar novos elementos atravez do javascript -->
+      <div id="app">
+        <input id="nome"/>
+      </div>
+
+      <script>
+
+        // isso seria o esperado no html
+        // <a  href="https://www.linkedin.com/in/rayza-oliveira-costa-482658129/">Acessar LinkedIn da Rayza</a>
+
+        // o link
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'https://www.linkedin.com/in/rayza-oliveira-costa-482658129/');
+        linkElement.setAttribute('title', 'LinkedIn da Rayza ');
+
+        // o texto 
+        var textElement = document.createTextNode('Acessar LinkedIn da Rayza 🙋🏼‍♀️');
+        linkElement.appendChild(textElement);
+
+        // jogar o link dentro do corpo
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(linkElement);
+
+        // removendo o input cpm js
+        var inputElement = document.querySelector('#nome');
+        containerElement.removeChild(inputElement);
+
+      </script>
+
+    </body>
+</html>
+
+<!-- 
+  função:
+  createElement('a'), criar um elemento(a), nesse caso um link
+  createTextNode('Acessar LinkedIn da Rayza 🙋🏼‍♀️'), cria o texto do createElement('a')
+  appendChild(linkElement), criar elementos
+  removeChild, removendo o input atravez do javaScript
+
+  appendChild(textElement), texto é um filho do linkElement 
+ -->
