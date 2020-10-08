@@ -1,0 +1,6 @@
+{
+  "presets": ["@babel/preset-env"]
+}
+
+
+// present-env, vai converter o codigo, independente de qual ambiente estevimos trbalhando
