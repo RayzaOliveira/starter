@@ -1,4 +1,4 @@
-// valores padão 
+ // valores padão 
 
 // function soma (a = 3, b = 6) {
 //   return a + b;
