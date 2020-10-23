@@ -3,9 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+
+  <style>
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    li {
+      clear: both;
+      margin-top: 20px;
+    } 
+
+    img {
+      width:80px;
+      float: left;
+      margin-right: 10px;
+    }
+
+    strong {
+      font-size: 20px;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+  </style>
+
 </head>
 <body style="background-color: slategray">
-  <button id="novotodo">Adicionar</button>
+<!-- <body style="background-color: rgb(34, 36, 37)"> -->
+
+  <form id="repo-form">
+    <input type="text" name="repository"/>
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <ul id="repo-list"></ul>
   
   <script src="./bundle.js"></script>
 </body>
@@ -16,4 +53,22 @@
 <!-- 
   Observações:
   bundle.js, o aquivo q o navegador reconhece, e sempre com deixar seu script no final da tag body
+ -->
+
+<!--  
+  já foi instanciado no js 
+ <ul id="repo-list">
+ <li>
+  <img src="https://avatars0.githubusercontent.com/u/28929274?s=200&v=4"/>
+  <strong>rocketseat.com.br</strong>
+  <p>Tire a sua ideia do papel e dê vida a sua startup.</p>
+  <a target="_blank" href="https://github.com/Rocketseat">Acessar</a>
+</li>
+<li>
+  <img src="https://avatars0.githubusercontent.com/u/28929274?s=200&v=4"/>
+  <strong>rocketseat.com.br</strong>
+  <p>Tire a sua ideia do papel e dê vida a sua startup.</p>
+  <a target="_blank" href="https://github.com/Rocketseat">Acessar</a>
+</li>
+</ul>
  -->
