@@ -23,8 +23,8 @@ class App {
   // Parametros padão numa função -> true
   setLoading(loading = true) {
     if (loading === true) {
-      let loading = document.createElement('span');
-      loadingEl.appendChild(documente.creatTextNode('Carregando'));
+      let loadingEl = document.createElement('span');
+      loadingEl.appendChild(document.createTextNode('Carregando'));
       loadingEl.setAttribute('id','loading');
 
       this.formEl.appendChild(loadingEl);
