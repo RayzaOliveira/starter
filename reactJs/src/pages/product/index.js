@@ -1,3 +1,5 @@
+// mostrar detalhes do produto
+
 import React, { Component } from "react";
 import api from '../../services/api';
 
@@ -7,6 +9,8 @@ export default class Product extends Component {
     product: {},
   };
 
+  // componentDidMount, ciclos de vida
+  // carregar informações do produto
   async componentDidMount() {
     const { id } = this.props.match.params;
 

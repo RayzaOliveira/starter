@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import "./styles.css";
 
 export default class Main extends Component {
+  // os estados
   state = {
     products: [], 
     productInfo: {},
@@ -23,6 +24,7 @@ export default class Main extends Component {
     this.setState({ products: docs, productInfo, page });
   };
 
+  // função do botão anterior
   prevPage = () => {
     const { page, productInfo } = this.state;
 
@@ -32,7 +34,7 @@ export default class Main extends Component {
 
     this.loadProducts(pageNumber);
   } 
-
+  // função do botão proximo
   nextPage = () => {
     const { page, productInfo } = this.state;
 
@@ -55,6 +57,8 @@ export default class Main extends Component {
           <Link to={`/products/${product._id}`}>Acessar</Link>
         </article>
       ))}
+
+      {/* boteões anterior e proxima */}
       <div className="actions">
         <button disabled={page === 1} onClick={this.prevPage}>Anterior</button>
         <button disabled={page === productInfo.pages} onClick={this.nextPage}>Próximo</button>
@@ -62,3 +66,6 @@ export default class Main extends Component {
     </div>);
   }
 }
+
+// componentDidMount, metodo executado assim que o componente for mostrado em tela 
+// state, é sempre um objeto 
